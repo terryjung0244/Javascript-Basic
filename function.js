@@ -151,17 +151,110 @@
 
 // //example of spread operator 
 
-// function sample(...items) {
-//   console.log(items)
+// // function sample(...items) {
+// //   console.log(items)
+// // }
+
+// // const array = [1, 2, 3, 4]
+
+// // //without using 'Spread operator'
+// // sample(array)
+// // //[Array(4)]
+
+// // //with using 'Spread operator'
+// // sample(...array)
+// // //(4) [1, 2, 3, 4]
+
+
+// // multiply between 1 to 100
+// // function multiplication(a, b) {
+// //   let output = 1
+// //   for (i = a; i <= b; i++) {
+// //     output = output * i
+// //   }
+// //   return output
+// // }
+
+// // console.log(multiplication(1, 3))
+
+
+// // const multiply = function (a, b) {
+// //   let output = 1
+// //   for (i = a; i <= b; i++) {
+// //     output *= i
+// //   }
+// //   return output
+// // }
+
+// // console.log(multiply(1, 5))
+
+// // const max = function(...items) {
+// //   let output = items[0]
+// //   for (const item of items) {
+// //     if (output < item) {
+// //       output = item
+// //     }
+// //   }
+// //   return output
+// // }
+
+// // console.log(max(1, 2, 3, 4)) //(...items) -> It makes into array.
+
+
+// // const max1 = function (items) {
+// //   let output = items[0]
+// //   for (const item of items) {
+// //     if (output < item) {
+// //       output = item
+// //     }
+// //   }
+// //   return output
+// // }
+
+// // console.log(max1([1, 2, 3, 4]))
+
+// const max = function (first, ...rests) {
+//   let output //기본값을 선언해준후
+//   let items  //기본값을 선언해준후
+
+//   if (Array.isArray(first)) { //배열이냐 아니냐 true or false 
+//     output = first[0] //배열이면 output에 first[0]값을 넣어라 1
+//     items = first     // 배열이면 items에 first로 넣어라 2, 근데 여기선
+//                       // (1, 2, 3, 4)가 아니니까, 다음 else if로 넘어간다.
+//   } else if (typeof(first) === 'number') { // (1, 2, 3, 4)값을 typeof로 거쳐서, 
+//                                           // 'number'이면 output과 items에 저장해라
+//     output = first
+//     items= rests
+//   }
+//   for (const data of items) {
+//     if (output < data) {
+//       output = data
+//     }
+//   }
+//   return output
 // }
 
-// const array = [1, 2, 3, 4]
+// console.log(max([1, 2, 3, 4])) // 1
+// console.log(max(1, 2, 3, 4)) // 2
 
-// //without using 'Spread operator'
-// sample(array)
-// //[Array(4)]
+const max = function(first, ...rests) {
+  let output
+  let items
 
-// //with using 'Spread operator'
-// sample(...array)
-// //(4) [1, 2, 3, 4]
+  if (Array.isArray(first)) {
+    output = first
+    items = rests
+  } else if (typeof(first) === 'number') {
+    output = first
+    items = rests
+  } 
+  for (const data of items) {
+    if (output < data) {
+      output = data
+    }
+  }
+  return output
+}
 
+console.log(max([1, 2, 3, 4, 5])) //output of array
+console.log(max(1, 2, 3, 4, 5)) //items of numbers
