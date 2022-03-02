@@ -1,3 +1,2 @@
-console.log()
-console.log()
-console.log()
+const greeting = "hello"
+console.log(greeting);
