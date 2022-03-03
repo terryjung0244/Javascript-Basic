@@ -237,24 +237,26 @@
 // console.log(max([1, 2, 3, 4])) // 1
 // console.log(max(1, 2, 3, 4)) // 2
 
-const max = function(first, ...rests) {
-  let output
-  let items
+//Callback Function
 
-  if (Array.isArray(first)) {
-    output = first
-    items = rests
-  } else if (typeof(first) === 'number') {
-    output = first
-    items = rests
-  } 
-  for (const data of items) {
-    if (output < data) {
-      output = data
-    }
-  }
-  return output
-}
+let array = [432, 231, 23, 12, 43]
+result = array.filter(function (value, index) {
+  return value % 2 !== 0
+})
 
-console.log(max([1, 2, 3, 4, 5])) //output of array
-console.log(max(1, 2, 3, 4, 5)) //items of numbers
+console.log(result);
+
+let array1 = [23, 51, 58, 02, 93]
+result = array1.map((element, index) => {
+  return element + "!!"
+})
+
+console.log(result)
+
+let array2 = [12, 54, 23, 54, 23]
+result = array2.forEach(function (value, index) {
+  console.log(`${index}번째 값은 ${value}`)
+})
+
+//arrow function
+
