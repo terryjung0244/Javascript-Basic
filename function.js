@@ -213,50 +213,66 @@
 
 // // console.log(max1([1, 2, 3, 4]))
 
-// const max = function (first, ...rests) {
-//   let output //기본값을 선언해준후
-//   let items  //기본값을 선언해준후
+const max = function (first, rests) {
+  console.log(first)
+  console.log(rests)
+  let output //기본값을 선언해준후
+  let items  //기본값을 선언해준후
 
-//   if (Array.isArray(first)) { //배열이냐 아니냐 true or false 
-//     output = first[0] //배열이면 output에 first[0]값을 넣어라 1
-//     items = first     // 배열이면 items에 first로 넣어라 2, 근데 여기선
-//                       // (1, 2, 3, 4)가 아니니까, 다음 else if로 넘어간다.
-//   } else if (typeof(first) === 'number') { // (1, 2, 3, 4)값을 typeof로 거쳐서, 
-//                                           // 'number'이면 output과 items에 저장해라
-//     output = first
-//     items= rests
+  if (Array.isArray(first)) { //배열이냐 아니냐 true or false 
+    output = first[0] //배열이면 output에 first[0]값을 넣어라 1
+    items = first     // 배열이면 items에 first로 넣어라 2, 근데 여기선
+                      // (1, 2, 3, 4)가 아니니까, 다음 else if로 넘어간다.
+  } else if (typeof(first) === 'number') { // (1, 2, 3, 4)값을 typeof로 거쳐서, 
+                                          // 'number'이면 output과 items에 저장해라
+    output = first
+    items= rests
+  }
+  for (const data of items) {
+    if (output < data) {
+      output = data
+    }
+  }
+  return output
+}
+
+// console.log(max("abc", [5, 6])) // 4
+// console.log(max(1, 2, 3, 4)) // 4
+
+
+// let array = [432, 231, 23, 12, 43]
+// result = array.filter(function (value, index) {
+//   return value % 2 !== 0
+// })
+
+// console.log(result);
+
+// let array1 = [23, 51, 58, 02, 93]
+// result = array1.map((element, index) => {
+//   return element + "!!"
+// })
+
+// console.log(result)
+
+// let array2 = [12, 54, 23, 54, 23]
+// result = array2.forEach(function (value, index) {
+//   console.log(`${index}번째 값은 ${value}`)
+// })
+
+// let array3 = [
+//   {
+//     name: "sungjun",
+//     age: 10
+//   },
+//   {
+//     name: "terry",
+//     age: 11
 //   }
-//   for (const data of items) {
-//     if (output < data) {
-//       output = data
-//     }
-//   }
-//   return output
-// }
+// ];
 
-// console.log(max([1, 2, 3, 4])) // 1
-// console.log(max(1, 2, 3, 4)) // 2
+// result = array3.map((element, index) => {
+//   console.log(element.name);
+// })
 
-//Callback Function
-
-let array = [432, 231, 23, 12, 43]
-result = array.filter(function (value, index) {
-  return value % 2 !== 0
-})
-
-console.log(result);
-
-let array1 = [23, 51, 58, 02, 93]
-result = array1.map((element, index) => {
-  return element + "!!"
-})
-
-console.log(result)
-
-let array2 = [12, 54, 23, 54, 23]
-result = array2.forEach(function (value, index) {
-  console.log(`${index}번째 값은 ${value}`)
-})
-
-//arrow function
+// //arrow function
 
