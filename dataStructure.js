@@ -108,15 +108,34 @@
 // console.log(newArray);
 
 //exercise
-const arr = [2, 4, 5, 1, 7, 5, 2, 1];
-arr.splice(0, 2)
-arr.splice(1, 1)
-arr.splice(1, 1)
-arr.splice(2, 2)
-console.log(arr);
+// const arr = [2, 4, 5, 1, 7, 5, 2, 1];
+// arr.splice(0, 2)
+// arr.splice(1, 1)
+// arr.splice(1, 1)
+// arr.splice(2, 2)
+// console.log(arr);
 
-const arr1 = [2, 4, 5, 1, 7, 5, 2, 1];
+// const arr1 = [2, 4, 5, 1, 7, 5, 2, 1];
 
-arr1.splice(1, 4);
+// arr1.splice(1, 4);
 
-console.log(arr1);
+// console.log(arr1);
+
+//Add items using splice();
+//example
+const numbers = [10, 11, 12, 12, 15];
+const startIndex = 3;
+const amountToDelete = 1;
+
+numbers.splice(startIndex, amountToDelete, 13, 14);
+console.log(numbers);
+
+//exercise
+function htmlColorNames(arr) {
+  
+  arr.splice(0, 2, 'DarkSalmon', 'BlanchedAlmond')
+ 
+  return arr;
+}
+
+console.log(htmlColorNames(['DarkGoldenRod', 'WhiteSmoke', 'LavenderBlush', 'PaleTurquoise', 'FireBrick']));
