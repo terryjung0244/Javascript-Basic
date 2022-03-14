@@ -10,3 +10,26 @@ onclickfunc()
 let simpleArray = ['one', 2, 'three', true, 'fall']
 
 console.log(simpleArray.length);
+
+const yourArray = ['Monteal', 34, false, 'Jelly', 'future']
+console.log(yourArray);
+console.log(yourArray.length)
+
+let ourArray = ["a", "b", "c"];
+let ourVariable = ourArray[2];
+
+console.log(ourVariable);
+
+console.log(ourArray);
+ourArray[0] = "z"
+console.log(ourArray)
+
+console.clear()
+
+let myArray = ["a", "b", "c", "d"];
+
+myArray[1] = "u"
+
+console.log(myArray);
+
+console.clear()
