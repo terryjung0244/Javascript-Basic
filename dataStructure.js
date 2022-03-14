@@ -33,3 +33,18 @@ myArray[1] = "u"
 console.log(myArray);
 
 console.clear()
+
+//add Items to an Array with push() and unshift()
+
+//the push() method adds elements to the end of an array.
+//the unshift() method adds elements to the bessing of an array.
+
+let twentyThree = "23";
+let array = ["24", "25"];
+
+array.unshift("22", "23");
+console.log(array);
+
+array.push("26", "27");
+console.log(array);
+
