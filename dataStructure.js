@@ -61,3 +61,28 @@ function mixedNumbers(arr) {
 console.log(mixedNumbers(['IV', 5, 'six']));
 
 console.clear();
+
+//Remove items from an Array with pop() and shift()
+//pop(): removes an element from the end of an array.
+//shift(): removes an element from the beginning of an array.
+
+//example
+let greetings = ['whats up?', 'hello', 'see ya'];
+greetings.pop();
+console.log(greetings);
+
+greetings.shift();
+console.log(greetings);
+
+let popped = greetings.pop()
+console.log(popped); //hello
+
+//exercise
+
+function popShift(arr) {
+  let popped = arr.pop();
+  let shifted = arr.shift();
+  return [shifted, popped];
+}
+
+console.log(popShift(['challenge', 'is', 'not', 'complete']));
