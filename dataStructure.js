@@ -159,15 +159,22 @@
 // let thisArray = [true, true, undefined, false, null];
 // let thisArray = [...thisArray]
 
-function copyMachine(arr, num) {
-  let newArr = [];
-  while (num >= 1) {
+// function copyMachine(arr, num) {
+//   let newArr = [];
+//   while (num >= 1) {
     
-    newArr.push([...arr])
+//     newArr.push([...arr])
     
-    num--;
-  }
-  return newArr;
-}
+//     num--;
+//   }
+//   return newArr;
+// }
 
-console.log(copyMachine([true, false, true], 2));
+// console.log(copyMachine([true, false, true], 4));
+
+//Combine Arrays with the Spread Operator
+let thisArray = ['sage', 'rosemary', 'parsley', 'thyme'];
+
+let thatArray = ['basil', 'cilantro', ...thisArray, 'coriander'];
+
+console.log(thatArray);
