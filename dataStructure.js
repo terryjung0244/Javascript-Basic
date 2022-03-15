@@ -147,8 +147,27 @@
 
 // console.log(todaysWeather);
 
-function forecast(arr) {
-  return arr.slice(2, 4)
+// function forecast(arr) {
+//   return arr.slice(2, 4)
+// }
+
+// console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
+
+// Copy an Array with the Spread Operator
+//Spread Operator => ...
+
+// let thisArray = [true, true, undefined, false, null];
+// let thisArray = [...thisArray]
+
+function copyMachine(arr, num) {
+  let newArr = [];
+  while (num >= 1) {
+    
+    newArr.push([...arr])
+    
+    num--;
+  }
+  return newArr;
 }
 
-console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
+console.log(copyMachine([true, false, true], 2));
