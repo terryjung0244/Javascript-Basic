@@ -123,19 +123,32 @@
 
 //Add items using splice();
 //example
-const numbers = [10, 11, 12, 12, 15];
-const startIndex = 3;
-const amountToDelete = 1;
+// const numbers = [10, 11, 12, 12, 15];
+// const startIndex = 3;
+// const amountToDelete = 1;
 
-numbers.splice(startIndex, amountToDelete, 13, 14);
-console.log(numbers);
+// numbers.splice(startIndex, amountToDelete, 13, 14);
+// console.log(numbers);
 
-//exercise
-function htmlColorNames(arr) {
+// //exercise
+// function htmlColorNames(arr) {
   
-  arr.splice(0, 2, 'DarkSalmon', 'BlanchedAlmond')
+//   arr.splice(0, 2, 'DarkSalmon', 'BlanchedAlmond')
  
-  return arr;
+//   return arr;
+// }
+
+// console.log(htmlColorNames(['DarkGoldenRod', 'WhiteSmoke', 'LavenderBlush', 'PaleTurquoise', 'FireBrick']));
+
+//Copy Array Items Using slice()
+//We have created a new array by extracting elements from an existing array.
+// let weatherConditions = ['rain', 'snow', 'sleet', 'hail', 'clear'];
+// let todaysWeather = weatherConditions.slice(2, 4);
+
+// console.log(todaysWeather);
+
+function forecast(arr) {
+  return arr.slice(2, 4)
 }
 
-console.log(htmlColorNames(['DarkGoldenRod', 'WhiteSmoke', 'LavenderBlush', 'PaleTurquoise', 'FireBrick']));
+console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
