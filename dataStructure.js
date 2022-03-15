@@ -193,3 +193,10 @@ let fruits = ['apples', 'pears', 'oranges', 'peaches', 'pears'];
 
 console.log(fruits.indexOf('apples'));
 console.log(fruits.indexOf('peaches'));
+
+function quickCheck(arr, elem) {
+  return arr.indexOf(elem) >= 0 ? true : false
+}
+
+console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
+
