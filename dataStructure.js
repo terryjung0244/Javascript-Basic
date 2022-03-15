@@ -172,17 +172,24 @@
 
 // console.log(copyMachine([true, false, true], 4));
 
-//Combine Arrays with the Spread Operator
-let thisArray = ['sage', 'rosemary', 'parsley', 'thyme'];
+// //Combine Arrays with the Spread Operator
+// let thisArray = ['sage', 'rosemary', 'parsley', 'thyme'];
 
-let thatArray = ['basil', 'cilantro', ...thisArray, 'coriander'];
+// let thatArray = ['basil', 'cilantro', ...thisArray, 'coriander'];
 
-console.log(thatArray);
+// console.log(thatArray);
 
-function spreadOut() {
-  let fragment = ['to', 'code'];
-  let sentence = ['learning', ...fragment, 'is', 'fun']
-  return sentence;
-}
+// function spreadOut() {
+//   let fragment = ['to', 'code'];
+//   let sentence = ['learning', ...fragment, 'is', 'fun']
+//   return sentence;
+// }
 
-console.log(spreadOut());
+// console.log(spreadOut());
+
+//Check for the presence of an element with indexof();
+
+let fruits = ['apples', 'pears', 'oranges', 'peaches', 'pears'];
+
+console.log(fruits.indexOf('apples'));
+console.log(fruits.indexOf('peaches'));
