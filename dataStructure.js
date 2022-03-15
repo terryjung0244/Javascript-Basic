@@ -189,14 +189,27 @@
 
 //Check for the presence of an element with indexof();
 
-let fruits = ['apples', 'pears', 'oranges', 'peaches', 'pears'];
+// let fruits = ['apples', 'pears', 'oranges', 'peaches', 'pears'];
 
-console.log(fruits.indexOf('apples'));
-console.log(fruits.indexOf('peaches'));
+// console.log(fruits.indexOf('apples'));
+// console.log(fruits.indexOf('peaches'));
 
-function quickCheck(arr, elem) {
-  return arr.indexOf(elem) >= 0 ? true : false
+// function quickCheck(arr, elem) {
+//   return arr.indexOf(elem) >= 0 ? true : false
+// }
+
+// console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
+
+//for loop using push()
+
+function greaterThanTen(arr) {
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 10) {
+      newArr.push(arr[i])
+    }
+  }
+  return newArr;
 }
 
-console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
-
+greaterThanTen([2, 12, 8, 14, 80, 0, 1]);
