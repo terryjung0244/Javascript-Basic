@@ -189,81 +189,96 @@
 
 // //Check for the presence of an element with indexof();
 
-// // let fruits = ['apples', 'pears', 'oranges', 'peaches', 'pears'];
+// // // let fruits = ['apples', 'pears', 'oranges', 'peaches', 'pears'];
 
-// // console.log(fruits.indexOf('apples'));
-// // console.log(fruits.indexOf('peaches'));
+// // // console.log(fruits.indexOf('apples'));
+// // // console.log(fruits.indexOf('peaches'));
 
-// // function quickCheck(arr, elem) {
-// //   return arr.indexOf(elem) >= 0 ? true : false
+// // // function quickCheck(arr, elem) {
+// // //   return arr.indexOf(elem) >= 0 ? true : false
+// // // }
+
+// // // console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
+
+// // //for loop using push()
+
+// // function greaterThanTen(arr) {
+// //   let newArr = [];
+// //   for (let i = 0; i < arr.length; i++) {
+// //     if (arr[i] > 10) {
+// //       newArr.push(arr[i])
+// //     }
+// //   }
+// //   return newArr;
 // // }
 
-// // console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
+// // greaterThanTen([2, 12, 8, 14, 80, 0, 1]);
 
-// //for loop using push()
+// // console.clear()
 
-// function greaterThanTen(arr) {
-//   let newArr = [];
-//   for (let i = 0; i < arr.length; i++) {
-//     if (arr[i] > 10) {
-//       newArr.push(arr[i])
-//     }
-//   }
-//   return newArr;
-// }
-
-// greaterThanTen([2, 12, 8, 14, 80, 0, 1]);
-
-// console.clear()
-
-// function filteredArray(arr, elem) {
-//   let newArr = [];
+// // function filteredArray(arr, elem) {
+// //   let newArr = [];
   
 
-//   for (let i = 0; i < arr.length; i++) {
-//     if (arr[i].indexOf(elem) == -1) {
+// //   for (let i = 0; i < arr.length; i++) {
+// //     if (arr[i].indexOf(elem) == -1) {
       
-//       newArr.push(arr[i]);
-//     }
-//   }
+// //       newArr.push(arr[i]);
+// //     }
+// //   }
 
-//   return newArr;
-// }
+// //   return newArr;
+// // }
 
-// console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));
+// // console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));
 
-//Create complex multi-dimensional arrays
+// //Create complex multi-dimensional arrays
+// //example
+// let nestedArray = [
+//   ['deep'],
+//   [
+//     ['deeper'], ['deeper'] 
+//   ],
+//   [
+//     [
+//       ['deepest'], ['deepest']
+//     ],
+//     [
+//       [
+//         ['deepest-est?']
+//       ]
+//     ]
+//   ]
+// ];
+
+// nestedArray[2][1][0][0][0] = 'deeper still';
+
+// console.log(nestedArray[2])
+// console.log(nestedArray[2][1][0][0][0]);
+
+// //exercise
+// let myNestedArray = [
+  
+//   ['unshift', false, 1, 2, 3, 'complex', 'nested'],
+//   ['loop', 'shift', 6, 7, 1000, 'method'],
+//   ['concat', false, true, 'spread', 'array',['deep']],
+//   ['mutate', 1327.98, 'splice', 'slice', 'push', [['deeper']]],
+//   ['iterate', 1.3849, 7, '8.4876', 'arbitrary', 'depth', [[['deepest']]]]
+  
+// ];
+
+
+//Add Key-value pairs to JS objects
 //example
-let nestedArray = [
-  ['deep'],
-  [
-    ['deeper'], ['deeper'] 
-  ],
-  [
-    [
-      ['deepest'], ['deepest']
-    ],
-    [
-      [
-        ['deepest-est?']
-      ]
-    ]
-  ]
-];
+const tekkenCharacter = {
+  player: 'Hwoarang',
+  fightingStyle: 'Tae Kwon Doe',
+  human: true
+};
+console.log(tekkenCharacter);
 
-nestedArray[2][1][0][0][0] = 'deeper still';
+tekkenCharacter.origin = 'South Korea';
+console.log(tekkenCharacter);
 
-console.log(nestedArray[2])
-console.log(nestedArray[2][1][0][0][0]);
-
-//exercise
-let myNestedArray = [
-  
-  ['unshift', false, 1, 2, 3, 'complex', 'nested'],
-  ['loop', 'shift', 6, 7, 1000, 'method'],
-  ['concat', false, true, 'spread', 'array',['deep']],
-  ['mutate', 1327.98, 'splice', 'slice', 'push', [['deeper']]],
-  ['iterate', 1.3849, 7, '8.4876', 'arbitrary', 'depth', [[['deepest']]]]
-  
-];
-
+tekkenCharacter['hair color'] = 'dyed orange';
+console.log(tekkenCharacter);
