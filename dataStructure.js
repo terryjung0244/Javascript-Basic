@@ -297,3 +297,27 @@ foods.price = 35
 
 console.log(foods);
 
+//Modify an object nested within an object
+//excercise
+
+let nestedObject = {
+  id: 28802695164,
+  date: 'December 31, 2016',
+  data: {
+    totalUsers: 99,
+    online: 80,
+    onlineStatus: {
+      active: 67,
+      away: 13,
+      busy: 8
+    }
+  }
+};
+
+nestedObject.data.onlineStatus.busy = 10;
+console.log(nestedObject);
+
+//exercise
+
+
+
