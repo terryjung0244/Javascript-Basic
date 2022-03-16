@@ -282,3 +282,18 @@ console.log(tekkenCharacter);
 
 tekkenCharacter['hair color'] = 'dyed orange';
 console.log(tekkenCharacter);
+
+//exercise
+let foods = {
+  apples: 25,
+  oranges: 32,
+  plums: 28
+};
+
+foods['bananas'] = 13;
+foods['grapes'] = 35;
+foods['strawberries'] = 27;
+foods.price = 35
+
+console.log(foods);
+
