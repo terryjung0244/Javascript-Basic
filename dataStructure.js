@@ -166,68 +166,91 @@
 //     newArr.push([...arr])
     
 //     num--;
+// //   }
+// //   return newArr;
+// // }
+
+// // console.log(copyMachine([true, false, true], 4));
+
+// // //Combine Arrays with the Spread Operator
+// // let thisArray = ['sage', 'rosemary', 'parsley', 'thyme'];
+
+// // let thatArray = ['basil', 'cilantro', ...thisArray, 'coriander'];
+
+// // console.log(thatArray);
+
+// // function spreadOut() {
+// //   let fragment = ['to', 'code'];
+// //   let sentence = ['learning', ...fragment, 'is', 'fun']
+// //   return sentence;
+// // }
+
+// // console.log(spreadOut());
+
+// //Check for the presence of an element with indexof();
+
+// // let fruits = ['apples', 'pears', 'oranges', 'peaches', 'pears'];
+
+// // console.log(fruits.indexOf('apples'));
+// // console.log(fruits.indexOf('peaches'));
+
+// // function quickCheck(arr, elem) {
+// //   return arr.indexOf(elem) >= 0 ? true : false
+// // }
+
+// // console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
+
+// //for loop using push()
+
+// function greaterThanTen(arr) {
+//   let newArr = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > 10) {
+//       newArr.push(arr[i])
+//     }
 //   }
 //   return newArr;
 // }
 
-// console.log(copyMachine([true, false, true], 4));
+// greaterThanTen([2, 12, 8, 14, 80, 0, 1]);
 
-// //Combine Arrays with the Spread Operator
-// let thisArray = ['sage', 'rosemary', 'parsley', 'thyme'];
+// console.clear()
 
-// let thatArray = ['basil', 'cilantro', ...thisArray, 'coriander'];
-
-// console.log(thatArray);
-
-// function spreadOut() {
-//   let fragment = ['to', 'code'];
-//   let sentence = ['learning', ...fragment, 'is', 'fun']
-//   return sentence;
-// }
-
-// console.log(spreadOut());
-
-//Check for the presence of an element with indexof();
-
-// let fruits = ['apples', 'pears', 'oranges', 'peaches', 'pears'];
-
-// console.log(fruits.indexOf('apples'));
-// console.log(fruits.indexOf('peaches'));
-
-// function quickCheck(arr, elem) {
-//   return arr.indexOf(elem) >= 0 ? true : false
-// }
-
-// console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
-
-//for loop using push()
-
-function greaterThanTen(arr) {
-  let newArr = [];
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] > 10) {
-      newArr.push(arr[i])
-    }
-  }
-  return newArr;
-}
-
-greaterThanTen([2, 12, 8, 14, 80, 0, 1]);
-
-console.clear()
-
-function filteredArray(arr, elem) {
-  let newArr = [];
+// function filteredArray(arr, elem) {
+//   let newArr = [];
   
 
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i].indexOf(elem) == -1) {
-      console.log(arr[i])
-      newArr.push(arr[i]);
-    }
-  }
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i].indexOf(elem) == -1) {
+      
+//       newArr.push(arr[i]);
+//     }
+//   }
 
-  return newArr;
-}
+//   return newArr;
+// }
 
-console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));
+// console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));
+
+//Create complex multi-dimensional arrays
+//example
+let nestedArray = [
+  ['deep'],
+  [
+    ['deeper'], ['deeper'] 
+  ],
+  [
+    [
+      ['deepest'], ['deepest']
+    ],
+    [
+      [
+        ['deepest-est?']
+      ]
+    ]
+  ]
+];
+
+nestedArray[2][1][0][0][0] = 'deeper still';
+
+console.log(nestedArray[2][1][0][0][0]);
