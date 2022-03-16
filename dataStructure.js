@@ -220,114 +220,132 @@
 // //   let newArr = [];
   
 
-// //   for (let i = 0; i < arr.length; i++) {
-// //     if (arr[i].indexOf(elem) == -1) {
+// // //   for (let i = 0; i < arr.length; i++) {
+// // //     if (arr[i].indexOf(elem) == -1) {
       
-// //       newArr.push(arr[i]);
-// //     }
-// //   }
+// // //       newArr.push(arr[i]);
+// // //     }
+// // //   }
 
-// //   return newArr;
-// // }
+// // //   return newArr;
+// // // }
 
-// // console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));
+// // // console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));
 
-// //Create complex multi-dimensional arrays
+// // //Create complex multi-dimensional arrays
+// // //example
+// // let nestedArray = [
+// //   ['deep'],
+// //   [
+// //     ['deeper'], ['deeper'] 
+// //   ],
+// //   [
+// //     [
+// //       ['deepest'], ['deepest']
+// //     ],
+// //     [
+// //       [
+// //         ['deepest-est?']
+// //       ]
+// //     ]
+// //   ]
+// // ];
+
+// // nestedArray[2][1][0][0][0] = 'deeper still';
+
+// // console.log(nestedArray[2])
+// // console.log(nestedArray[2][1][0][0][0]);
+
+// // //exercise
+// // let myNestedArray = [
+  
+// //   ['unshift', false, 1, 2, 3, 'complex', 'nested'],
+// //   ['loop', 'shift', 6, 7, 1000, 'method'],
+// //   ['concat', false, true, 'spread', 'array',['deep']],
+// //   ['mutate', 1327.98, 'splice', 'slice', 'push', [['deeper']]],
+// //   ['iterate', 1.3849, 7, '8.4876', 'arbitrary', 'depth', [[['deepest']]]]
+  
+// // ];
+
+
+// //Add Key-value pairs to JS objects
 // //example
-// let nestedArray = [
-//   ['deep'],
-//   [
-//     ['deeper'], ['deeper'] 
-//   ],
-//   [
-//     [
-//       ['deepest'], ['deepest']
-//     ],
-//     [
-//       [
-//         ['deepest-est?']
-//       ]
-//     ]
-//   ]
-// ];
+// const tekkenCharacter = {
+//   player: 'Hwoarang',
+//   fightingStyle: 'Tae Kwon Doe',
+//   human: true
+// };
+// console.log(tekkenCharacter);
 
-// nestedArray[2][1][0][0][0] = 'deeper still';
+// tekkenCharacter.origin = 'South Korea';
+// console.log(tekkenCharacter);
 
-// console.log(nestedArray[2])
-// console.log(nestedArray[2][1][0][0][0]);
+// tekkenCharacter['hair color'] = 'dyed orange';
+// console.log(tekkenCharacter);
 
 // //exercise
-// let myNestedArray = [
-  
-//   ['unshift', false, 1, 2, 3, 'complex', 'nested'],
-//   ['loop', 'shift', 6, 7, 1000, 'method'],
-//   ['concat', false, true, 'spread', 'array',['deep']],
-//   ['mutate', 1327.98, 'splice', 'slice', 'push', [['deeper']]],
-//   ['iterate', 1.3849, 7, '8.4876', 'arbitrary', 'depth', [[['deepest']]]]
-  
-// ];
+// let foods = {
+//   apples: 25,
+//   oranges: 32,
+//   plums: 28
+// };
 
+// foods['bananas'] = 13;
+// foods['grapes'] = 35;
+// foods['strawberries'] = 27;
+// foods.price = 35
 
-//Add Key-value pairs to JS objects
-//example
-const tekkenCharacter = {
-  player: 'Hwoarang',
-  fightingStyle: 'Tae Kwon Doe',
-  human: true
-};
-console.log(tekkenCharacter);
+// console.log(foods);
 
-tekkenCharacter.origin = 'South Korea';
-console.log(tekkenCharacter);
+// //Modify an object nested within an object
+// //excercise
 
-tekkenCharacter['hair color'] = 'dyed orange';
-console.log(tekkenCharacter);
+// let nestedObject = {
+//   id: 28802695164,
+//   date: 'December 31, 2016',
+//   data: {
+//     totalUsers: 99,
+//     online: 80,
+//     onlineStatus: {
+//       active: 67,
+//       away: 13,
+//       busy: 8
+//     }
+//   }
+// };
 
+// nestedObject.data.onlineStatus.busy = 10;
+// console.log(nestedObject);
+
+// //exercise
+
+// let userActivity = {
+//   id: 23894201352,
+//   date: 'January 1, 2017',
+//   data: {
+//     totalUsers: 51,
+//     online: 42
+//   }
+// };
+// userActivity.data.online = 45;
+
+// console.log(userActivity);
+
+//Access property names with bracket notation
 //exercise
 let foods = {
   apples: 25,
   oranges: 32,
-  plums: 28
+  plums: 28,
+  bananas: 13,
+  grapes: 35,
+  strawberries: 27
 };
 
-foods['bananas'] = 13;
-foods['grapes'] = 35;
-foods['strawberries'] = 27;
-foods.price = 35
+function checkInventory(scannedItem) {
+  
+  return foods[scannedItem]
+  
+}
 
-console.log(foods);
-
-//Modify an object nested within an object
-//excercise
-
-let nestedObject = {
-  id: 28802695164,
-  date: 'December 31, 2016',
-  data: {
-    totalUsers: 99,
-    online: 80,
-    onlineStatus: {
-      active: 67,
-      away: 13,
-      busy: 8
-    }
-  }
-};
-
-nestedObject.data.onlineStatus.busy = 10;
-console.log(nestedObject);
-
-//exercise
-
-let userActivity = {
-  id: 23894201352,
-  date: 'January 1, 2017',
-  data: {
-    totalUsers: 51,
-    online: 42
-  }
-};
-userActivity.data.online = 45;
-
-console.log(userActivity);
-
+console.log(checkInventory("apples"));
