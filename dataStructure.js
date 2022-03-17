@@ -351,6 +351,7 @@
 // console.log(checkInventory("apples"));
 
 // use the delete keyword to remove object properties
+//example
 let foods = {
   apples: 25,
   oranges: 32,
@@ -362,3 +363,17 @@ let foods = {
 
 delete foods.apples;
 console.log(foods);
+
+//exercise
+let fruits = {
+  apples: 25,
+  oranges: 32,
+  plums: 28,
+  bananas: 13,
+  grapes: 35,
+  strawberries: 27
+};
+
+delete fruits.oranges;
+delete fruits.plums;
+console.log(fruits);
