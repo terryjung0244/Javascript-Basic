@@ -417,27 +417,55 @@
 //  console.log(isEveryoneHere(users));
 
  //The keys of an object with a for...in statement
-//example
- let users = {
+// //example
+//  let users = {
+//   Alan: {
+//     age: 27,
+//     online: true
+//   },
+//   Jeff: {
+//     age: 32,
+//     online: true
+//   },
+//   Sarah: {
+//     age: 48,
+//     online: true
+//   },
+//   Ryan: {
+//     age: 19,
+//     online: true
+//   }
+// };
+
+// for (let user in users) {
+//   console.log(user)
+// }
+
+//exercise
+
+const users = {
   Alan: {
-    age: 27,
-    online: true
+    online: false
   },
   Jeff: {
-    age: 32,
     online: true
   },
   Sarah: {
-    age: 48,
-    online: true
-  },
-  Ryan: {
-    age: 19,
-    online: true
+    online: false
   }
-};
-
-for (let user in users) {
-  console.log(user)
 }
 
+function countOnline(usersObj) {
+  
+  let result = 0;
+  for (let user in usersObj) {
+    if (usersObj[user].online === true) {
+      result++;
+      console.log(usersObj[user].online)
+    }
+  }
+  return result;
+  
+}
+
+console.log(countOnline(users));
