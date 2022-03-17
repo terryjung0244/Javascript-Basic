@@ -326,60 +326,99 @@
 //     totalUsers: 51,
 //     online: 42
 //   }
-// };
-// userActivity.data.online = 45;
+// // };
+// // userActivity.data.online = 45;
 
-// console.log(userActivity);
+// // console.log(userActivity);
 
-//Access property names with bracket notation
-//exercise
-// let foods = {
-//   apples: 25,
-//   oranges: 32,
-//   plums: 28,
-//   bananas: 13,
-//   grapes: 35,
-//   strawberries: 27
-// };
+// //Access property names with bracket notation
+// //exercise
+// // let foods = {
+// //   apples: 25,
+// //   oranges: 32,
+// //   plums: 28,
+// //   bananas: 13,
+// //   grapes: 35,
+// //   strawberries: 27
+// // };
 
-// function checkInventory(scannedItem) {
+// // function checkInventory(scannedItem) {
   
-//   return foods[scannedItem]
+// //   return foods[scannedItem]
   
-// }
+// // }
 
-// console.log(checkInventory("apples"));
+// // console.log(checkInventory("apples"));
 
-// use the delete keyword to remove object properties
-// //example
-// let foods = {
-//   apples: 25,
-//   oranges: 32,
-//   plums: 28,
-//   bananas: 13,
-//   grapes: 35,
-//   strawberries: 27
+// // use the delete keyword to remove object properties
+// // //example
+// // let foods = {
+// //   apples: 25,
+// //   oranges: 32,
+// //   plums: 28,
+// //   bananas: 13,
+// //   grapes: 35,
+// //   strawberries: 27
+// // };
+
+// // delete foods.apples;
+// // console.log(foods);
+
+// // //exercise
+// // let fruits = {
+// //   apples: 25,
+// //   oranges: 32,
+// //   plums: 28,
+// //   bananas: 13,
+// //   grapes: 35,
+// //   strawberries: 27
+// // };
+
+// // delete fruits.oranges;
+// // delete fruits.plums;
+// // console.log(fruits);
+
+// //Check if an obejct has a property
+// let users = {
+//   Alan: {
+//     age: 27,
+//     online: true
+//   },
+//   Jeff: {
+//     age: 32,
+//     online: true
+//   },
+//   Sarah: {
+//     age: 48,
+//     online: true
+//   },
+//   Ryan: {
+//     age: 19,
+//     online: true
+//   }
 // };
 
-// delete foods.apples;
-// console.log(foods);
+// console.log(users.hasOwnProperty('Jeff'));
 
 // //exercise
-// let fruits = {
-//   apples: 25,
-//   oranges: 32,
-//   plums: 28,
-//   bananas: 13,
-//   grapes: 35,
-//   strawberries: 27
-// };
 
-// delete fruits.oranges;
-// delete fruits.plums;
-// console.log(fruits);
+// function isEveryoneHere(userObj) {
+//   if (
+//     userObj.hasOwnProperty('Alan') &&
+//     userObj.hasOwnProperty('Jeff') &&
+//     userObj.hasOwnProperty('Sarah') &&
+//     userObj.hasOwnProperty('Ryan')
+//   ) {
+//     return true;
+//   }
+//   return false;
+//  }
+ 
+//  console.log(isEveryoneHere(users));
 
-//Check if an obejct has a property
-let users = {
+ //The keys of an object with a for...in statement
+//example
+ let users = {
   Alan: {
     age: 27,
     online: true
@@ -398,22 +437,7 @@ let users = {
   }
 };
 
-console.log(users.hasOwnProperty('Jeff'));
+for (let user in users) {
+  console.log(user)
+}
 
-//exercise
-
-function isEveryoneHere(userObj) {
-  if (
-    userObj.hasOwnProperty('Alan') &&
-    userObj.hasOwnProperty('Jeff') &&
-    userObj.hasOwnProperty('Sarah') &&
-    userObj.hasOwnProperty('Ryan')
-  ) {
-    return true;
-  }
-  return false;
- }
- 
- console.log(isEveryoneHere(users));
-
- 
