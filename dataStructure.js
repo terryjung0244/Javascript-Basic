@@ -400,4 +400,20 @@ let users = {
 
 console.log(users.hasOwnProperty('Jeff'));
 
+//exercise
 
+function isEveryoneHere(userObj) {
+  if (
+    userObj.hasOwnProperty('Alan') &&
+    userObj.hasOwnProperty('Jeff') &&
+    userObj.hasOwnProperty('Sarah') &&
+    userObj.hasOwnProperty('Ryan')
+  ) {
+    return true;
+  }
+  return false;
+ }
+ 
+ console.log(isEveryoneHere(users));
+
+ 
