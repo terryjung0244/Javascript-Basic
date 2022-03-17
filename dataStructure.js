@@ -472,61 +472,61 @@
 
 //exercise
 // let users = {
-//   Alan: {
-//     age: 27,
-//     online: false
-//   },
-//   Jeff: {
-//     age: 32,
-//     online: true
-//   },
-//   Sarah: {
-//     age: 48,
-//     online: false
-//   },
-//   Ryan: {
-//     age: 19,
-//     online: true
+// //   Alan: {
+// //     age: 27,
+// //     online: false
+// //   },
+// //   Jeff: {
+// //     age: 32,
+// //     online: true
+// //   },
+// //   Sarah: {
+// //     age: 48,
+// //     online: false
+// //   },
+// //   Ryan: {
+// //     age: 19,
+// //     online: true
+// //   }
+// // };
+
+// // function getArrayOfUsers(obj) {
+  
+// //   return Object.keys(obj)
+  
+// // }
+// // console.log(getArrayOfUsers(users));
+
+// //Modify an Array Stored in an Object
+// //exercise
+
+// let user = {
+//     name: 'Kenneth',
+//     age: 28,
+//     data: {
+//       username: 'kennethCodesAllDay',
+//       joinDate: 'March 26, 2016',
+//       organization: 'freeCodeCamp',
+//       friends: [
+//         'Sam',
+//         'Kira',
+//         'Tomo'
+//       ],
+//       location: {
+//         city: 'San Francisco',
+//         state: 'CA',
+//         country: 'USA'
+//       }
+//     }
+//   };
+  
+//   function addFriend(userObj, friend) {
+    
+//     userObj.data.friends.push(friend)
+    
+//     return userObj.data.friends
 //   }
-// };
-
-// function getArrayOfUsers(obj) {
-  
-//   return Object.keys(obj)
-  
-// }
-// console.log(getArrayOfUsers(users));
-
-//Modify an Array Stored in an Object
-//exercise
-
-let user = {
-    name: 'Kenneth',
-    age: 28,
-    data: {
-      username: 'kennethCodesAllDay',
-      joinDate: 'March 26, 2016',
-      organization: 'freeCodeCamp',
-      friends: [
-        'Sam',
-        'Kira',
-        'Tomo'
-      ],
-      location: {
-        city: 'San Francisco',
-        state: 'CA',
-        country: 'USA'
-      }
-    }
-  };
-  
-  function addFriend(userObj, friend) {
-    
-    userObj.data.friends.push(friend)
-    
-    return userObj.data.friends
-  }
   
   
-  console.log(addFriend(user, 'Pete'));
+//   console.log(addFriend(user, 'Pete'));
 
