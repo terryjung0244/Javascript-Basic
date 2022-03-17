@@ -351,29 +351,53 @@
 // console.log(checkInventory("apples"));
 
 // use the delete keyword to remove object properties
-//example
-let foods = {
-  apples: 25,
-  oranges: 32,
-  plums: 28,
-  bananas: 13,
-  grapes: 35,
-  strawberries: 27
+// //example
+// let foods = {
+//   apples: 25,
+//   oranges: 32,
+//   plums: 28,
+//   bananas: 13,
+//   grapes: 35,
+//   strawberries: 27
+// };
+
+// delete foods.apples;
+// console.log(foods);
+
+// //exercise
+// let fruits = {
+//   apples: 25,
+//   oranges: 32,
+//   plums: 28,
+//   bananas: 13,
+//   grapes: 35,
+//   strawberries: 27
+// };
+
+// delete fruits.oranges;
+// delete fruits.plums;
+// console.log(fruits);
+
+//Check if an obejct has a property
+let users = {
+  Alan: {
+    age: 27,
+    online: true
+  },
+  Jeff: {
+    age: 32,
+    online: true
+  },
+  Sarah: {
+    age: 48,
+    online: true
+  },
+  Ryan: {
+    age: 19,
+    online: true
+  }
 };
 
-delete foods.apples;
-console.log(foods);
+console.log(users.hasOwnProperty('Jeff'));
 
-//exercise
-let fruits = {
-  apples: 25,
-  oranges: 32,
-  plums: 28,
-  bananas: 13,
-  grapes: 35,
-  strawberries: 27
-};
 
-delete fruits.oranges;
-delete fruits.plums;
-console.log(fruits);
