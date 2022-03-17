@@ -370,102 +370,129 @@
 // //   oranges: 32,
 // //   plums: 28,
 // //   bananas: 13,
-// //   grapes: 35,
-// //   strawberries: 27
+// // //   grapes: 35,
+// // //   strawberries: 27
+// // // };
+
+// // // delete fruits.oranges;
+// // // delete fruits.plums;
+// // // console.log(fruits);
+
+// // //Check if an obejct has a property
+// // let users = {
+// //   Alan: {
+// //     age: 27,
+// //     online: true
+// //   },
+// //   Jeff: {
+// //     age: 32,
+// //     online: true
+// //   },
+// //   Sarah: {
+// //     age: 48,
+// //     online: true
+// //   },
+// //   Ryan: {
+// //     age: 19,
+// //     online: true
+// //   }
 // // };
 
-// // delete fruits.oranges;
-// // delete fruits.plums;
-// // console.log(fruits);
+// // console.log(users.hasOwnProperty('Jeff'));
 
-// //Check if an obejct has a property
-// let users = {
-//   Alan: {
-//     age: 27,
-//     online: true
-//   },
-//   Jeff: {
-//     age: 32,
-//     online: true
-//   },
-//   Sarah: {
-//     age: 48,
-//     online: true
-//   },
-//   Ryan: {
-//     age: 19,
-//     online: true
-//   }
-// };
+// // //exercise
 
-// console.log(users.hasOwnProperty('Jeff'));
+// // function isEveryoneHere(userObj) {
+// //   if (
+// //     userObj.hasOwnProperty('Alan') &&
+// //     userObj.hasOwnProperty('Jeff') &&
+// //     userObj.hasOwnProperty('Sarah') &&
+// //     userObj.hasOwnProperty('Ryan')
+// //   ) {
+// //     return true;
+// //   }
+// //   return false;
+// //  }
+ 
+// //  console.log(isEveryoneHere(users));
+
+//  //The keys of an object with a for...in statement
+// // //example
+// //  let users = {
+// //   Alan: {
+// //     age: 27,
+// //     online: true
+// //   },
+// //   Jeff: {
+// //     age: 32,
+// //     online: true
+// //   },
+// //   Sarah: {
+// //     age: 48,
+// //     online: true
+// //   },
+// //   Ryan: {
+// //     age: 19,
+// //     online: true
+// //   }
+// // };
+
+// // for (let user in users) {
+// //   console.log(user)
+// // }
 
 // //exercise
 
-// function isEveryoneHere(userObj) {
-//   if (
-//     userObj.hasOwnProperty('Alan') &&
-//     userObj.hasOwnProperty('Jeff') &&
-//     userObj.hasOwnProperty('Sarah') &&
-//     userObj.hasOwnProperty('Ryan')
-//   ) {
-//     return true;
-//   }
-//   return false;
-//  }
- 
-//  console.log(isEveryoneHere(users));
-
- //The keys of an object with a for...in statement
-// //example
-//  let users = {
+// const users = {
 //   Alan: {
-//     age: 27,
-//     online: true
+//     online: false
 //   },
 //   Jeff: {
-//     age: 32,
 //     online: true
 //   },
 //   Sarah: {
-//     age: 48,
-//     online: true
-//   },
-//   Ryan: {
-//     age: 19,
-//     online: true
+//     online: false
 //   }
-// };
-
-// for (let user in users) {
-//   console.log(user)
 // }
 
-//exercise
+// function countOnline(usersObj) {
+  
+//   let result = 0;
+//   for (let user in usersObj) {
+//     if (usersObj[user].online === true) {
+//       result++;
+//       console.log(usersObj[user].online)
+//     }
+//   }
+//   return result;
+  
+// }
 
-const users = {
+// console.log(countOnline(users));
+
+//exercise
+let users = {
   Alan: {
+    age: 27,
     online: false
   },
   Jeff: {
+    age: 32,
     online: true
   },
   Sarah: {
+    age: 48,
     online: false
+  },
+  Ryan: {
+    age: 19,
+    online: true
   }
-}
+};
 
-function countOnline(usersObj) {
+function getArrayOfUsers(obj) {
   
-  let result = 0;
-  for (let user in usersObj) {
-    if (usersObj[user].online === true) {
-      result++;
-      console.log(usersObj[user].online)
-    }
-  }
-  return result;
+  return Object.keys(obj)
   
 }
-
-console.log(countOnline(users));
+console.log(getArrayOfUsers(users));
