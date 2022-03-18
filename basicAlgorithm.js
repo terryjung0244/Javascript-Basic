@@ -30,3 +30,15 @@ function factorialize(num) {
   }
   
   factorialize(5);
+
+  function factorialize(num) {
+      if (num === 0 || num ===1)
+        return 1;
+      for (i = num -1; i >= 1; i--) {
+        return num *= i
+      }
+      return num
+  }
+
+  factorialize(5);
+
