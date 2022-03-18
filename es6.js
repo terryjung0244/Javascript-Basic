@@ -16,3 +16,14 @@
 //   s[2] = 7;
 // }
 // editInPlace();
+
+//Create Strings using Template Literals
+
+const person = {
+    name: "Zodiac Hasbro",
+    age: 56
+};
+
+const greeting = `Hello, my name is ${person.name}`
+console.log(greeting);
+
