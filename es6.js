@@ -52,28 +52,38 @@
 //push를 사용해서, failureItems = [] 안에 엘레멘트를 넣는다.
 
 //Write Concise Object Literal Declarations Using Object Property Shorthand
-//example
-const getMousePosition = (x, y) => ({ x, y });
+// //example
+// const getMousePosition = (x, y) => ({ x, y });
 
-//exercise
-const createPerson = (name, age, gender) => {
+// //exercise
+// const createPerson = (name, age, gender) => {
     
-    return {
-      name,
-      age,
-      gender
-    };
+//     return {
+//       name,
+//       age,
+//       gender
+//     };
     
-  };
+//   };
 
-//Write Concise declarative Functions with ES6
+// //Write Concise declarative Functions with ES6
 
-const bicycle = {
-    gear: 2,
-    setGear(newGear) {
-      this.gear = newGear;
-    }
-  };
+// const bicycle = {
+//     gear: 2,
+//     setGear(newGear) {
+//       this.gear = newGear;
+//     }
+//   };
   
-  bicycle.setGear(3);
-  console.log(bicycle.gear);
+//   bicycle.setGear(3);
+//   console.log(bicycle.gear);
+
+
+class Vegetable {
+    constructor(name) {
+      this.name = name
+    }
+  }
+ 
+  const carrot = new Vegetable('carrot');
+  console.log(carrot.name); // Should display 'carrot'
