@@ -52,5 +52,18 @@
 //push를 사용해서, failureItems = [] 안에 엘레멘트를 넣는다.
 
 //Write Concise Object Literal Declarations Using Object Property Shorthand
+//example
 const getMousePosition = (x, y) => ({ x, y });
 
+//exercise
+const createPerson = (name, age, gender) => {
+    
+    return {
+      name,
+      age,
+      gender
+    };
+    
+  };
+
+  
