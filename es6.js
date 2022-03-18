@@ -19,32 +19,38 @@
 
 //Create Strings using Template Literals
 
-const person = {
-    name: "Zodiac Hasbro",
-    age: 56
-};
+// const person = {
+//     name: "Zodiac Hasbro",
+//     age: 56
+// };
 
-const greeting = `Hello, my name is ${person.name}`
-console.log(greeting);
+// const greeting = `Hello, my name is ${person.name}`
+// console.log(greeting);
 
-//exercise
+// //exercise
 
-const result = {
-    success: ["max-length", "no-amd", "prefer-arrow-functions"],
-    failure: ["no-var", "var-on-top", "linebreak"],
-    skipped: ["no-extra-semi", "no-dup-keys"]
-  };
-  function makeList(arr) {
+// const result = {
+//     success: ["max-length", "no-amd", "prefer-arrow-functions"],
+//     failure: ["no-var", "var-on-top", "linebreak"],
+//     skipped: ["no-extra-semi", "no-dup-keys"]
+//   };
+//   function makeList(arr) {
     
-    const failureItems = [];
-    for (let i = 0; i < arr.length; i++) {
-      failureItems.push(`<li class="text-warning">${arr[i]}</li>`);
-    }
+//     const failureItems = [];
+//     for (let i = 0; i < arr.length; i++) {
+//       failureItems.push(`<li class="text-warning">${arr[i]}</li>`);
+//     }
     
   
-    return failureItems;
-  }
+//     return failureItems;
+//   }
   
-  const failuresList = makeList(result.failure);
+//   const failuresList = makeList(result.failure);
 
-  
+//result.failure = arr.
+//for문을 사용해서, failure안에 있는 3개의 엘레멘트를 나타냄.
+//push를 사용해서, failureItems = [] 안에 엘레멘트를 넣는다.
+
+//Write Concise Object Literal Declarations Using Object Property Shorthand
+const getMousePosition = (x, y) => ({ x, y });
+
